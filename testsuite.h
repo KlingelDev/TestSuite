@@ -1,10 +1,10 @@
-#define EqualToZero == 0
-#define NotEqualToZero == !0
-#define EqualTo(y) == y
-#define NotEqualTo(y) == !y
+#define IsEqualToZero == 0
+#define IsNotEqualToZero == !0
+#define IsEqualTo(y) == y
+#define IsNotEqualTo(y) == !y
 
 #define IsTrue true
-#define Not !
+#define IsFalse false
 
 #define GreaterThan(y) > y
 #define LesserThan(y) < y
