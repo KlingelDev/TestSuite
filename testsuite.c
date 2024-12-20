@@ -5,8 +5,6 @@
 
 #include "testsuite.h"
 
-#define AssertThat(x, y)                                                       \
-  return x == 0 && y == 2;                                                     \
 
 struct Test *CreateTests() {
   return malloc(sizeof(struct Test));
@@ -63,7 +61,6 @@ int RunTest( struct Test *tests, int argc, char *argv[]) {
       for(;;) {
         if(strcmp(t->name, argv[2]) == 0) {
           int r = t->func();
-          printf("r: %i", r);
           return r;
         }
 
