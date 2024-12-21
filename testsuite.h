@@ -1,5 +1,7 @@
 #define IsEqualToZero == 0
 #define IsNotEqualToZero == !0
+#define IsEqualToNull == NULL
+#define IsNotEqualToNULL == !NULL
 #define IsEqualTo(y) == y
 #define IsNotEqualTo(y) == !y
 
@@ -15,7 +17,7 @@
 
 struct Test *CreateTests();
 int AddTest(struct Test *tests, char name[], int (*func)());
-int RunTest( struct Test *tests, int argc, char *argv[]);
+int RunTest(struct Test *tests, int argc, char *argv[]);
 
 struct Test *addElement(struct Test *last);
 
@@ -25,3 +27,4 @@ struct Test {
   struct Test *next;
   struct Test *last;
 };
+
